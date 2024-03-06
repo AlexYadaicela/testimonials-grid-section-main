@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(210, 46%, 93%);
+    /* background-color: black; */
+    font-family: "Barlow Semi Condensed", sans-serif; 
+    font-size: 13px;
+}
+
+.wrapper{
+    padding: 40px;  
+    box-sizing: border-box;
+    display: grid; 
+    grid-template-areas: 
+    "card-one card-one card-two card-five"
+    "card-three card-four card-four card-five";
+    gap: 20px;
+}
+
+section{
+    border-radius: 10px;
+    padding: 25px; 
+}
+
+.user-information{
+    display: flex; 
+    align-items: center;
+}
+
+img{
+    border-radius: 50%;
+    width: 30px;
+}
+.user-information .text{
+    color: hsl(0, 0%, 81%); 
+    line-height: 5px;
+    padding-inline-start: 15px;
+}
+
+.user-information .black-text{
+    color: black; 
+}
+
+.black-text-body > h2, .black-text-body > p{
+    color: black!important; 
+}
+
+.user-information .text p:nth-child(1){
+    font-weight: 600;
+}
+
+.user-information .text p:nth-child(2){
+    font-weight: 500;
+    color: hsl(0, 0%, 81%, 50%);
+}
+
+.user-description h2{
+    color: hsl(0, 0%, 100%, 85%); 
+    font-weight: 600;
+}
+
+.user-description p{
+    color: hsl(0, 0%, 81%, 70%); 
+    font-weight: 500;
+}
+
+
+.wrapper > .card-one{
+    grid-area: card-one; 
+    background-color: hsl(263, 55%, 52%);
+}
+
+.wrapper > .card-two{
+    grid-area: card-two; 
+    background-color: hsl(217, 19%, 35%);
+}
+
+.wrapper > .card-three{
+    grid-area: card-three; 
+    background-color: hsl(0, 0%, 100%);
+}
+
+.wrapper > .card-four{
+    grid-area: card-four; 
+    background-color: hsl(219, 29%, 14%);
+}
+
+.wrapper > .card-five{
+    grid-area: card-five; 
+    background-color: hsl(0, 0%, 100%) ;
+}
